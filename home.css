@@ -69,12 +69,12 @@ body{
 
 @font-face {
     font-family: 'genesis-regular';
-    src: url('/assets//GenesisSans/GenesisSansHeadGlobal-Regular.otf');
+    src: url('assets/GenesisSans/GenesisSansHeadGlobal-Regular.otf');
   }
 
 @font-face {
     font-family: 'genesis-light';
-    src: url('/assets//GenesisSans/GenesisSansHeadGlobal-Light.otf');
+    src: url('assets/GenesisSans/GenesisSansHeadGlobal-Light.otf');
   }
 
 .font-regular{
@@ -140,7 +140,7 @@ body{
   /**
    * Dark Arrow Down
    */
-  background-image: url('/assets/arrowDown.png');
+  background-image: url('assets/arrowDown.png');
   background-size: contain;
 }
 
