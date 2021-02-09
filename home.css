@@ -69,12 +69,12 @@ body{
 
 @font-face {
     font-family: 'genesis-regular';
-    src: url('butterflyeffect/assets/GenesisSans/GenesisSansHeadGlobal-Regular.otf');
+    src: url('https://banzan-previews.github.io/butterflyeffect/assets/GenesisSans/GenesisSansHeadGlobal-Regular.otf');
   }
 
 @font-face {
     font-family: 'genesis-light';
-    src: url('butterflyeffect/assets/GenesisSans/GenesisSansHeadGlobal-Light.otf');
+    src: url('https://banzan-previews.github.io/butterflyeffect/assets/GenesisSans/GenesisSansHeadGlobal-Light.otf');
   }
 
 .font-regular{
@@ -103,7 +103,7 @@ body{
 }
 .landing-hero {
     width: 100%;
-    background-image: url('butterflyeffect/assets/car1.jpg');
+    background-image: url('https://banzan-previews.github.io/butterflyeffect/assets/car1.jpg');
     height: 80vh;
     background-position: center;
     background-size: cover;
@@ -140,7 +140,7 @@ body{
   /**
    * Dark Arrow Down
    */
-  background-image: url('butterflyeffect/assets/arrowDown.png');
+  background-image: url('https://banzan-previews.github.io/butterflyeffect/assets/arrowDown.png');
   background-size: contain;
 }
 
