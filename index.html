@@ -43,38 +43,39 @@
         </div>
     </div>
     <div class="container">
-        <div class="form">
+        <form name="submit-to-google-sheet" method="post" id="test-form" class="form">
+            
             <div class="row">
                 <div class="col-12 col-md-2"></div>
                 <div class="col-12 col-md-4 ">
                     <div class="form-group custom-input-now">
-                        <input type="text" class="form-control" placeholder="First name">
+                        <input  type="text" name="firstname" class="form-control" placeholder="First name">
                     </div>
                 </div>
                 <div class="col-12 col-md-4 custom-input-now">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Last name">
+                        <input type="text" name="lastname" class="form-control" placeholder="Last name">
                     </div>
                 </div>
                 <div class="col-12 col-md-2"></div>
                 <div class="col-12 col-md-2"></div>
                 <div class="col-12 col-md-4 ">
                     <div class="form-group custom-input-now">
-                        <input type="text" class="form-control" placeholder="Email address">
+                        <input type="text" name="email" class="form-control" placeholder="Email address">
                     </div>
                 </div>
                 <div class="col-12 col-md-4 custom-input-now">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Mobile number">
+                        <input type="text" name="phone" class="form-control" placeholder="Mobile number">
                     </div>
                 </div>
                 <div class="col-12 col-md-2"></div>
                 <div class="col-12 col-md-2"></div>
                 <div class="col-12 col-md-4 text-center text-md-left">
                     <div class="space-50"></div>
-                    <span class=" btn-orange font-regular h6">
+                    <button id="submit-form" type="submit" class=" btn-orange font-regular h6">
                         Know more
-                    </span>
+                    </button>
                 </div>
                 <div class="col-12 col-md-6"></div>
                 <div class="col-12 col-md-2"></div>
@@ -88,12 +89,24 @@
                     contact info@1stmotors.com
                 </div>
             </div>
-        </div>
+        </form>
     </div>
     <div class="space-100"></div>
     <div class="footer">
         <div class="landing-nav space-100"></div>
         <img src="https://banzan-previews.github.io/butterflyeffect/assets/car2.jpg" alt="">
     </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyYO82zr66hWvL6ZFnBLuwbUT9bp8USWvQHKOblraD-qcLZPyBgLyQA/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 </html>
