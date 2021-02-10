@@ -90,7 +90,7 @@ body{
 }
 
 .landing-nav{
-    
+    position: absolute;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8678658963585434) 25%, rgba(0,0,0,0.6521796218487395) 57%, rgba(0,0,0,0) 100%);
 
